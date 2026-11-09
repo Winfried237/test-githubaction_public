@@ -1,7 +1,7 @@
 name : premier workflow
 
 on:
-  push:
+  push: #pull_request peut remplacer pull
     branches:
       - main
   workflow_dispatch:
@@ -18,4 +18,4 @@ on:
           run: bash scripts/hello.sh
 
         - name:
-          run echo "Workflow terminé !"
+          run: echo "Workflow terminé !"
