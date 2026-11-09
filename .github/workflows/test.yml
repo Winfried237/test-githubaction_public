@@ -10,12 +10,12 @@ jobs:
   hello:
     runs-on: ubuntu-latest
 
-     steps:
-       - name: Récupérer le dépot
-         uses: actions/checkout@v4
+    steps:
+      - name: Récupérer le dépot
+        uses: actions/checkout@v4
 
-       - name: Exécuter un scipt
-         run: bash scripts/hello.sh
+      - name: Exécuter un scipt
+        run: bash scripts/hello.sh
 
-       - name:
-         run: echo "Workflow terminé !"
+      - name:
+        run: echo "Workflow terminé !"
